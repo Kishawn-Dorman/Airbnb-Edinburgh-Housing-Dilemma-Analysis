@@ -64,6 +64,8 @@ Based on this it seems that the reports of illegal short-term renting occurring 
 - Python
 
 ## Libraries used
+- pandas
+- numpy
 
 ## Want to connect/have a question? 
 [Linkedin](https://www.linkedin.com/in/kishawndorman/)
