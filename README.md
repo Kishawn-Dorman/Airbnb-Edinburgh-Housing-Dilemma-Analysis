@@ -8,12 +8,15 @@ Resistance from homeowners and residents in communities with Airbnbs has intensi
 2.	Bring disturbances with noise and mess from large groups (house party bookings) (Salboy Limited, 2022).
 3.	Influence the atmosphere and ethos of these communities because of “over-tourism” (i.e. too many visitors) (Gallagher, 2021).
 
-## Problem Statement
+### Problem Statement
 Airbnb hosts are fuelling the impacts mentioned above by renting out their residential properties as illegal short-term rentals. 
+
+## Overall Flow Model
+![image](https://github.com/Kishawn-Dorman/Cluster-Analysis-and-Classification-Modelling/assets/146044118/57fb2f3f-8453-4bb9-87ec-908e8afba789)
 
 
 ## Section 1 - Data Understanding (SAS E-Miner)
-Edinburgh is a city rich with culture, adventures and an atmosphere hospitable to tourists. This makes it a great place for Airbnbs to thrive as there is sure to be a flow of tourists and travellers throughout the city. The ‘listings’ dataset for this analysis comprises of variables that capture data about the hosts, listings and listing’s neighbourhoods in Edinburgh. 
+
 
 ![image](https://github.com/Kishawn-Dorman/Cluster-Analysis-and-Classification-Modelling/assets/146044118/63295d78-b03b-45d5-ba9a-ddb8611cc69b)
 
@@ -31,7 +34,7 @@ Figure 1 - Distribution of Interval & Binary Variables
 
 Figure 1 shows all binary and interval variables except longitude, latitude & last_scraped as histograms. The white bar depicted on some of the charts represents the amount of missing data. 
 
-In figure 1 and table 1 the minimum and maximum values displayed for ‘bedrooms’ & ‘price’ are distant from each other, thus suggests that outliers maybe present. “An outlier is a value that is very different from the other data in your data set” (StatisticsLectures.com, 2012).
+In figure 1 and table 1 the minimum and maximum values displayed for ‘bedrooms’ & ‘price’ are distant from each other, thus suggests that outliers maybe present.
 
 The summaries statistics revealed that the data is mainly plagued by the following: 
 (i)	24 out of the 75 variables are missing data, 
@@ -108,11 +111,17 @@ Majority of the 1431 listings were entire home/apartments & private rooms and on
 	
 ### Data Reduction
 
-Duplicate and repetitive data sometimes go unchecked in the data preparation phase and although they may not hugely impact the final results, performing data reduction will certainly improve the final results by eliminating irrelevant data (Anunaya, 2023). Following a correlation analysis on the dataset in SAS Enterprise Miner, a few pairs of variables was identified with a correlation above 50% (appendix 1). Out of these pairs of the variables identified, the following variables was removed; bedrooms, number_of_reviews_l30d and number_of_reviews_ltm.
+![image](https://github.com/Kishawn-Dorman/Cluster-Analysis-and-Classification-Modelling/assets/146044118/567bc5b5-91b6-43b2-a802-bafe96977b79)
 
-Additionally, to further reduce the variables in the dataset a principal component analysis (PCA) was executed on the interval variables. The PCA’s outcome from reducing 12 interval variables, yielded just 1 less variable as 11 new components at the confidence threshold of 95% was generated. Since only 1 less variable was generated and the meanings of the already existing 12 interval variables do not require further interpretation, the interval variables will be retained over the PC’s for the next phase of the analysis. 
+Following a correlation analysis on the dataset in SAS Enterprise Miner, a few pairs of variables was identified with a correlation above 50% (appendix 1). Out of these pairs of the variables identified, the following variables was removed; bedrooms, number_of_reviews_l30d and number_of_reviews_ltm.
+
+![image](https://github.com/Kishawn-Dorman/Cluster-Analysis-and-Classification-Modelling/assets/146044118/d17dc569-13bf-4174-acfb-0635de65f846)
+
+PCA’s outcome from reducing 12 interval variables, yielded just 1 less variable at a confidence threshold of 95%. Since only 1 less variable was generated the interval variables will be retained over the PC’s for the next phase of the analysis. 
 
 The dataset now comprise of the following:
+![image](https://github.com/Kishawn-Dorman/Cluster-Analysis-and-Classification-Modelling/assets/146044118/c0f02b57-c256-4e12-9c01-acdecad8e9b8)
+
 
 
 
