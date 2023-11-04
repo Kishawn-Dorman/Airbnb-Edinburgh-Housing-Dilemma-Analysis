@@ -20,9 +20,11 @@ Edinburgh is a city rich with culture, adventures and an atmosphere hospitable t
 ### Summary Statistics
 
 Table 1 – Summaries Statistics
+
 ![image](https://github.com/Kishawn-Dorman/Cluster-Analysis-and-Classification-Modelling/assets/146044118/018df3d2-ff91-46ae-8465-87c46692f523)
 
 Figure 1 - Distribution of Interval & Binary Variables
+
 ![image](https://github.com/Kishawn-Dorman/Cluster-Analysis-and-Classification-Modelling/assets/146044118/c5ee5890-9240-4b29-9e0b-e2079aa16265)
 ![image](https://github.com/Kishawn-Dorman/Cluster-Analysis-and-Classification-Modelling/assets/146044118/ef72c8d3-644b-4744-91e9-2c44ed43584f)
 
@@ -40,6 +42,7 @@ The summaries statistics revealed that the data is mainly plagued by the followi
 ### Data Visualisation
 
 Figure 2
+
 ![image](https://github.com/Kishawn-Dorman/Cluster-Analysis-and-Classification-Modelling/assets/146044118/59419b3b-1aef-4b4e-b6d6-86b938f8c231)
 
 Figure 2 shows that listings are somewhat fairly distributed throughout most of the neighbourhoods which does help to discern low and high-end areas. This will add some validity to the findings from this analysis of listings in Edinburgh neighbourhoods.
@@ -60,28 +63,37 @@ Based on figure 3 and 4 it seems that these two types of properties (entire home
 
 ### Data Cleaning
 
-Table 3 – Deleted Variables
+Table 2 – Deleted Variables
+
 ![image](https://github.com/Kishawn-Dorman/Cluster-Analysis-and-Classification-Modelling/assets/146044118/1c414011-8e06-473d-98f1-42a5b8af35ad)
  
 As identified in the previous phase the bathrooms_text variable contain missing data. Using the information provided in the description & listing_url variables, the missing data for 13 listings affected within the bathrooms_test variable was filled in via Excel. 
 The missing data in 'bedrooms' (105), 'last_review' and 'reviews_per_month' (same 665 listings) variables was removed (770) from the dataset by filtering the blank observations for each variable and deleting them.
+
+Figure 5 
+
 ![image](https://github.com/Kishawn-Dorman/Cluster-Analysis-and-Classification-Modelling/assets/146044118/e4ac4c3b-1b2b-4716-b6e9-8d62aaae8de6)
 
 
 The description variable was once again used for the listings with 'bedroom' outlier values. Based on the information contained in this variable, the 'bedroom' outlier values are indeed accurate and was retained in the dataset. 
 On the other hand the price variable had 6 unverifiable outliers (price on the listings website page did not correspond with the dataset’s price) and as such was removed by filtering out any listing priced under 5000. 
 
-Table 4 – Price Variable Outliers
+Table 3 – Price Variable Outliers
+
  ![image](https://github.com/Kishawn-Dorman/Cluster-Analysis-and-Classification-Modelling/assets/146044118/4dd81b16-4311-43a6-87db-b579a1cfc758)
 
 ### Data Transformation
 
 Two new variables was created using Excel. 
 
+Figure 6
+
 ![image](https://github.com/Kishawn-Dorman/Cluster-Analysis-and-Classification-Modelling/assets/146044118/1dacc7a4-c19e-46cc-ab11-e66012693882)
 
 (i) Occupancy Rate (OR) = reviews_per_month x minimum_nights x 12(months) / (365-availability_365) 
 The formula for OR was derived from an article from Airbnb (2023) that detailed the occupancy rate as “the number of nights booked divided by total nights available to be booked”.
+
+Figure 7
 
 ![image](https://github.com/Kishawn-Dorman/Cluster-Analysis-and-Classification-Modelling/assets/146044118/da844671-f8ed-496b-bc24-d2a833306385)
 
