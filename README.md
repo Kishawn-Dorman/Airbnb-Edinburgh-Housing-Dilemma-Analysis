@@ -120,6 +120,7 @@ Following a correlation analysis on the dataset in SAS Enterprise Miner, a few p
 PCA’s outcome from reducing 12 interval variables, yielded just 1 less variable at a confidence threshold of 95%. Since only 1 less variable was generated the interval variables will be retained over the PC’s for the next phase of the analysis. 
 
 The dataset now comprise of the following:
+
 ![image](https://github.com/Kishawn-Dorman/Cluster-Analysis-and-Classification-Modelling/assets/146044118/c0f02b57-c256-4e12-9c01-acdecad8e9b8)
 
 
