@@ -141,6 +141,27 @@ The dataset now comprise of the following:
 ![image](https://github.com/Kishawn-Dorman/Cluster-Analysis-and-Classification-Modelling/assets/146044118/c0f02b57-c256-4e12-9c01-acdecad8e9b8)
 
 
+## Section 3 - Cluster Analysis 
+
+**Variables Used for Cluster Nodes**
+
+![image](https://github.com/Kishawn-Dorman/Cluster-Analysis-and-Classification-Modelling/assets/146044118/74c7148d-b55d-48b4-8d0b-91a848d2d861)
+
+A series of clustering techniques was used by adjusting (i) a type of clustering method and (ii) a type of clustering distance property (standardization or range) in the cluster node settings. Five different clustering settings was used to derive 2-3 clusters with a fairly equal distribution of listings between them.
+
+![image](https://github.com/Kishawn-Dorman/Cluster-Analysis-and-Classification-Modelling/assets/146044118/14a88be7-28a9-415f-970e-1938a9d9747b)
+
+**Cluster Results**
+
+![image](https://github.com/Kishawn-Dorman/Cluster-Analysis-and-Classification-Modelling/assets/146044118/e3d7069b-4244-4afd-8fe2-717ed79a8cb0)
+
+![image](https://github.com/Kishawn-Dorman/Cluster-Analysis-and-Classification-Modelling/assets/146044118/9dac4437-c17e-4a54-b54b-8d49d6ac6002)
+
+Based on the mean statustics the clusters were interpreted as follows. Cluster 1 will be classed as **low-priced listings** because it has the lowest mean listing income and highest mean maximum nights (hosts may opt for higher maximum nights at lower price to attract long-stayers with a hope of establish a source of continuous income for the course of the year). 
+
+Cluster 2 will be classed as **standard-priced listings** because its mean listing income is medial out of the three clusters and had a much more industry standard maximum nights’ limits in comparison to the other clusters. Although the occupancy rate is marginally more than cluster 1 (lowest occupancy rate), it is still very much within the logical occupancy rate of a genuine short-term Airbnb listing. But the mean availability of listings in this cluster was significantly lower than the other clusters, which suggest that on average these listings may be rented out all year round. 
+
+Cluster 3 will be classed as **high income generating** listings because its mean listing income and price are the highest out the 3 clusters. Their minimum nights value is also the highest (suggest that hosts may charge a lofty price for each booking), number of reviews the lowest (since listings are possibly priced the highest, visitors may be very few and as a result less reviews) and calculated host listings count the highest (suggest that these host may be running an accommodation business). 
 
 
 ## Skills and tools used
