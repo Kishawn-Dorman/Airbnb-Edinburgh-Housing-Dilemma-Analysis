@@ -11,9 +11,8 @@ Resistance from homeowners and residents in communities with Airbnbs has intensi
 **3.	Influence the atmosphere and ethos of these communities because of “over-tourism” (i.e. too many visitors) (Gallagher, 2021).**
 
 
-**Problem Statement**
+**Problem Statement: Airbnb hosts are fuelling the impacts mentioned above by renting out their residential properties as illegal short-term rentals.** 
 
-Airbnb hosts are fuelling the impacts mentioned above by renting out their residential properties as illegal short-term rentals. 
 
 ## Table of Contents
 [**Overall Flow Model**](https://github.com/Kishawn-Dorman/Cluster-Analysis-and-Classification-Modelling#overall-flow-model) 
