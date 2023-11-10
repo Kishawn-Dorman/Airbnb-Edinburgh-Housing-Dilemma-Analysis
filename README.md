@@ -168,6 +168,7 @@ Cluster 3 will be classed as **high income generating** listings because its mea
 
 ## Section 4 - Classification Modelling
 
+Based on the clusters/segments generated, segment 2 seems the most likely out of the segments to contain listings involved in illegal short-term rental. With that in mind this segment will be used along with **a binary (0=No, 1=Yes) target variable that represents whether or not a listing is likely to be illegitmately rented out or not.**  
 
 
 ## Skills and tools used
