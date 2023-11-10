@@ -31,7 +31,8 @@ Problem Statement: **Airbnb hosts are fuelling the impacts mentioned above by re
 
 
 ## Overall Flow Model
-![image](https://github.com/Kishawn-Dorman/Cluster-Analysis-and-Classification-Modelling/assets/146044118/57fb2f3f-8453-4bb9-87ec-908e8afba789)
+
+![image](https://github.com/Kishawn-Dorman/Airbnb-Edinburgh-Housing-Dilemma-Analysis/assets/146044118/60eca701-4ae6-4130-a5bf-576dab3225df)
 
 
 ## Section 1 - Data Understanding (SAS E-Miner)
