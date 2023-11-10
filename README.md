@@ -1,4 +1,3 @@
-# Data-Mining-&-Analysis-Project
 In this project, recommendations and insights are generated to tackle the problem described in the section to follow (i.e. About the project). Firstly SAS E-Miner was used to conduct exploratory data analysis on the "Listings" dataset [can be found here](http://insideairbnb.com/get-the-data). 
 I then perform data preparation (which involves data cleaning, variable reduction, variable creation) using Microsoft Excel. 
 Lastly using SAS E-Miner, a cluster analysis will be executed, followed by a decision tree (classification model) to classify a type/group (cluster) Airbnb hosts in Edinburgh that maybe engaged in illegal short term rental.
@@ -8,8 +7,26 @@ Resistance from homeowners and residents in communities with Airbnbs has intensi
 2.	Bring disturbances with noise and mess from large groups (house party bookings) (Salboy Limited, 2022).
 3.	Influence the atmosphere and ethos of these communities because of “over-tourism” (i.e. too many visitors) (Gallagher, 2021).
 
-### Problem Statement
+
+**Problem Statement**
 Airbnb hosts are fuelling the impacts mentioned above by renting out their residential properties as illegal short-term rentals. 
+
+## Table of Contents
+[**Overall Flow Model**](https://github.com/Kishawn-Dorman/Cluster-Analysis-and-Classification-Modelling#overall-flow-model) 
+
+[**Section 1 - Data Understanding(SAS E-Miner)**](https://github.com/Kishawn-Dorman/Cluster-Analysis-and-Classification-Modelling#section-1---data-understanding-sas-e-miner) 
+- [**Summary Statistics**](https://github.com/Kishawn-Dorman/Cluster-Analysis-and-Classification-Modelling#summary-statistics)
+- [**Data Visualisation**](https://github.com/Kishawn-Dorman/Cluster-Analysis-and-Classification-Modelling#data-visualisation)
+
+[**Section 2 - Data Preparation (Microsoft Excel)**](https://github.com/Kishawn-Dorman/Cluster-Analysis-and-Classification-Modelling#section-2---data-prearation-microsoft-excel) 
+- [**Data Cleaning**](https://github.com/Kishawn-Dorman/Cluster-Analysis-and-Classification-Modelling#data-cleaning)
+- [**Data Transformation**](https://github.com/Kishawn-Dorman/Cluster-Analysis-and-Classification-Modelling#data-transformation)
+- [**Data Reduction**](https://github.com/Kishawn-Dorman/Cluster-Analysis-and-Classification-Modelling#data-reduction)
+
+[**Skills and Tools Used**](https://github.com/Kishawn-Dorman/Cluster-Analysis-and-Classification-Modelling#skills-and-tools-used) 
+
+[**Nodes and Functions Used**](https://github.com/Kishawn-Dorman/Cluster-Analysis-and-Classification-Modelling#nodes-and-functions-used)
+
 
 ## Overall Flow Model
 ![image](https://github.com/Kishawn-Dorman/Cluster-Analysis-and-Classification-Modelling/assets/146044118/57fb2f3f-8453-4bb9-87ec-908e8afba789)
