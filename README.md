@@ -166,6 +166,9 @@ Cluster 2 will be classed as **standard-priced listings** because its mean listi
 
 Cluster 3 will be classed as **high income generating** listings because its mean listing income and price are the highest out the 3 clusters. Their minimum nights value is also the highest (suggest that hosts may charge a lofty price for each booking), number of reviews the lowest (since listings are possibly priced the highest, visitors may be very few and as a result less reviews) and calculated host listings count the highest (suggest that these host may be running an accommodation business). 
 
+## Section 4 - Classification Modelling
+
+
 
 ## Skills and tools used
 - Exploratory Data Analysis (PCA, Univariate analysis, Bivariate analysis)
