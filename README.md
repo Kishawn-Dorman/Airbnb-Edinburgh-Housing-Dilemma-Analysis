@@ -23,6 +23,8 @@ Problem Statement: **Airbnb hosts are fuelling the impacts mentioned above by re
 - [**Data Transformation**](https://github.com/Kishawn-Dorman/Cluster-Analysis-and-Classification-Modelling#data-transformation)
 - [**Data Reduction**](https://github.com/Kishawn-Dorman/Cluster-Analysis-and-Classification-Modelling#data-reduction)
 
+[**Section 3 - Cluster Analysis**](https://github.com/Kishawn-Dorman/Cluster-Analysis-and-Classification-Modelling#section-3---cluster-analysis) 
+
 [**Skills and Tools Used**](https://github.com/Kishawn-Dorman/Cluster-Analysis-and-Classification-Modelling#skills-and-tools-used) 
 
 [**Nodes and Functions Used**](https://github.com/Kishawn-Dorman/Cluster-Analysis-and-Classification-Modelling#nodes-and-functions-used)
