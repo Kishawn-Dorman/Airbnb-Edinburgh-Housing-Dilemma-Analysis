@@ -4,14 +4,11 @@ Lastly using SAS E-Miner, a cluster analysis will be executed, followed by a dec
 
 Resistance from homeowners and residents in communities with Airbnbs has intensified because of the issues below. 
 
-**1.	Pressure property owners into “switching from long-term tenancies to short-term rentals”. This may reduce housing availability through increased rent prices and by extension increase housing prices (Guttentag, 2018).**
+1.	Pressure property owners into “switching from long-term tenancies to short-term rentals”. This may reduce housing availability through increased rent 		prices and by extension increase housing prices (Guttentag, 2018).
+2.	Bring disturbances with noise and mess from large groups (house party bookings) (Salboy Limited, 2022).
+3.	Influence the atmosphere and ethos of these communities because of “over-tourism” (i.e. too many visitors) (Gallagher, 2021).
 
-**2.	Bring disturbances with noise and mess from large groups (house party bookings) (Salboy Limited, 2022).**
-
-**3.	Influence the atmosphere and ethos of these communities because of “over-tourism” (i.e. too many visitors) (Gallagher, 2021).**
-
-
-**Problem Statement: Airbnb hosts are fuelling the impacts mentioned above by renting out their residential properties as illegal short-term rentals.** 
+Problem Statement: **Airbnb hosts are fuelling the impacts mentioned above by renting out their residential properties as illegal short-term rentals.** 
 
 
 ## Table of Contents
