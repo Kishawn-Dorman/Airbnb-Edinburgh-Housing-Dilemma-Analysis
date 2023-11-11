@@ -186,7 +186,15 @@ The decision tree performed well at accurately classifying listings as the missc
 
 ![Screenshot 2023-11-10 231825](https://github.com/Kishawn-Dorman/Airbnb-Edinburgh-Housing-Dilemma-Analysis/assets/146044118/ef43307d-c585-4ce2-bf8e-961a0bc71664)
 
-Although the decision tree model performed well at classification, the variables selected by the algorithm were not great classfiers of illegitmate listings. As a result two decisions was created with different parameters to change how the algorithm selects variables and classifies those variables in the decision tree. But, unfortunately this did not yield any meaningful changes towards having strong classifies of illegitmate listings.   
+Although the decision tree model performed well at classification, the variables selected by the algorithm were not great classfiers of illegitmate listings. As a result two decision trees was created with different parameters to change how the algorithm selects variables and classifies those variables in the decision tree. But, unfortunately this did not yield any meaningful changes towards having strong classifies of illegitmate listings. 
+
+Thus the original **(Tree Name: "Standard") decision tree** was retained as the classfication model.
+
+## Model Evaluation
+
+![Screenshot 2023-11-10 232903](https://github.com/Kishawn-Dorman/Airbnb-Edinburgh-Housing-Dilemma-Analysis/assets/146044118/c9b27daf-b0ef-4b67-af5b-efb1858b965f)
+
+Looking at the decision tree  
 
 
 ## Skills and tools used
