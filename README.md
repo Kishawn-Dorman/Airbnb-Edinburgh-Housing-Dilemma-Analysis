@@ -190,19 +190,19 @@ Based on the clusters/segments generated, segment 2 seems the most likely out of
 
 ### Decision Tree
 
-![Screenshot 2023-11-10 223651](https://github.com/Kishawn-Dorman/Airbnb-Edinburgh-Housing-Dilemma-Analysis/assets/146044118/3f1958c4-8c6c-4787-950b-9a9c947e453a)
+![Screenshot 2023-11-10 223651](https://github.com/Kishawn-Dorman/Airbnb-Edinburgh-Housing-Dilemma-Analysis/assets/146044118/3694fa5b-960a-4518-8b71-202dc4224255)
 
-![Screenshot 2023-11-10 222839](https://github.com/Kishawn-Dorman/Airbnb-Edinburgh-Housing-Dilemma-Analysis/assets/146044118/b3f6490e-fd1b-4b21-a845-2d354790a168)
+![Screenshot 2023-11-10 222839](https://github.com/Kishawn-Dorman/Airbnb-Edinburgh-Housing-Dilemma-Analysis/assets/146044118/630cdc1a-9b9d-4d1a-9ee1-50ba7e2b9ab8)
 
-![Screenshot 2023-11-10 223514](https://github.com/Kishawn-Dorman/Airbnb-Edinburgh-Housing-Dilemma-Analysis/assets/146044118/e2f57bc9-5886-4da7-ae2e-65ab484e6c32)
+![Screenshot 2023-11-10 223514](https://github.com/Kishawn-Dorman/Airbnb-Edinburgh-Housing-Dilemma-Analysis/assets/146044118/3fd80655-fef2-47d9-874f-32e1fdd921eb)
 
 The default settings for the decision tree node was retained with the exception of the maximum depth being changed from 6 to 3. Although, retaining a higher depth would not necessarily be detrimental to the model results, having higher depth = lower accuracy in the lower leaf nodes (which does not help the aim of classifying listings with high accuracy).
 
 The decision tree performed well at accurately classifying listings as the missclassifcation rate, maximum absolute error and average squared error rates showed high accuracy and stability across the train, validation and test data sets/partitions (note: to simulate a supervised and unsupervised environment the data was split into a "train", "validation" and "test" partition; 40%, 30%, 30%).
 
-![Screenshot 2023-11-10 231514](https://github.com/Kishawn-Dorman/Airbnb-Edinburgh-Housing-Dilemma-Analysis/assets/146044118/a6d3eec8-57ac-40b6-b6cb-b8a09b44aeb2)
+![Screenshot 2023-11-10 231514](https://github.com/Kishawn-Dorman/Airbnb-Edinburgh-Housing-Dilemma-Analysis/assets/146044118/a6403b78-8c15-40b4-a7be-b9efe83133e8)
 
-![Screenshot 2023-11-10 231825](https://github.com/Kishawn-Dorman/Airbnb-Edinburgh-Housing-Dilemma-Analysis/assets/146044118/ef43307d-c585-4ce2-bf8e-961a0bc71664)
+![Screenshot 2023-11-10 231825](https://github.com/Kishawn-Dorman/Airbnb-Edinburgh-Housing-Dilemma-Analysis/assets/146044118/d2f2582e-f308-427f-89d7-449248ce88ce)
 
 Although the decision tree model performed well at classification, the variables selected by the algorithm were not great classfiers of illegitimate listings (the accuracy of the decision tree lowers as you progress down the tree). As a result two decision trees was created with different parameters to change how the algorithm selects variables and classifies those variables in the decision tree. But, unfortunately this did not yield any meaningful changes towards having strong classifies of illegitimate listings. 
 
