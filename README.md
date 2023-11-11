@@ -25,6 +25,12 @@ Problem Statement: **Airbnb hosts are fuelling the impacts mentioned above by re
 
 [**Section 3 - Cluster Analysis**](https://github.com/Kishawn-Dorman/Cluster-Analysis-and-Classification-Modelling#section-3---cluster-analysis) 
 
+[**Section 4 - Classification Modelling**](https://github.com/Kishawn-Dorman/Airbnb-Edinburgh-Housing-Dilemma-Analysis/blob/main/README.md#section-4---classification-modelling) 
+- [**Decision Tree**](https://github.com/Kishawn-Dorman/Airbnb-Edinburgh-Housing-Dilemma-Analysis/tree/main#decision-tree)
+- [**Model Evaluation**](https://github.com/Kishawn-Dorman/Airbnb-Edinburgh-Housing-Dilemma-Analysis/tree/main#model-evaluation)
+
+[**Section 5 - Conclusion**](https://github.com/Kishawn-Dorman/Airbnb-Edinburgh-Housing-Dilemma-Analysis/blob/main/README.md#section-5---conclusion) 
+
 [**Skills and Tools Used**](https://github.com/Kishawn-Dorman/Cluster-Analysis-and-Classification-Modelling#skills-and-tools-used) 
 
 [**Nodes and Functions Used**](https://github.com/Kishawn-Dorman/Cluster-Analysis-and-Classification-Modelling#nodes-and-functions-used)
@@ -166,6 +172,7 @@ Cluster 2 will be classed as **standard-priced listings** because its mean listi
 
 Cluster 3 will be classed as **high income generating** listings because its mean listing income and price are the highest out the 3 clusters. Their minimum nights value is also the highest (suggest that hosts may charge a lofty price for each booking), number of reviews the lowest (since listings are possibly priced the highest, visitors may be very few and as a result less reviews) and calculated host listings count the highest (suggest that these host may be running an accommodation business). 
 
+
 ## Section 4 - Classification Modelling
 
 Based on the clusters/segments generated, segment 2 seems the most likely out of the segments to contain listings involved in illegal short-term rental. With that in mind this segment will be used along with **a binary (0=No, 1=Yes) target variable that represents whether or not a listing is likely to be illegitmately rented out or not** to build a decision tree.  
@@ -180,7 +187,7 @@ Based on the clusters/segments generated, segment 2 seems the most likely out of
 
 The default settings for the decision tree node was retained with the exception of the maximum depth being changed from 6 to 3. Although, retaining a higher depth would not necessarily be detrimental to the model results, having higher depth = lower accuracy in the lower leaf nodes (which does not help the aim of classifying listings with high accuracy).
 
-The decision tree performed well at accurately classifying listings as the missclassifcation rate, maximum absolute error and average squared error rates showed high accuracy and stability across the train, validation and test data sets/partitions (note: to simulate a supervised and unsupervised environment the data was split into a "train", "validation" and "test" partition; 40%, 40%, 30%).
+The decision tree performed well at accurately classifying listings as the missclassifcation rate, maximum absolute error and average squared error rates showed high accuracy and stability across the train, validation and test data sets/partitions (note: to simulate a supervised and unsupervised environment the data was split into a "train", "validation" and "test" partition; 40%, 30%, 30%).
 
 ![Screenshot 2023-11-10 231514](https://github.com/Kishawn-Dorman/Airbnb-Edinburgh-Housing-Dilemma-Analysis/assets/146044118/a6d3eec8-57ac-40b6-b6cb-b8a09b44aeb2)
 
@@ -190,11 +197,12 @@ Although the decision tree model performed well at classification, the variables
 
 Thus the original **(Tree Name: "Standard") decision tree** was retained as the classfication model.
 
-## Model Evaluation
+### Model Evaluation
 
 ![Screenshot 2023-11-10 232903](https://github.com/Kishawn-Dorman/Airbnb-Edinburgh-Housing-Dilemma-Analysis/assets/146044118/c9b27daf-b0ef-4b67-af5b-efb1858b965f)
 
 Five models inclusing the decision tree was compared using the model evaluation node. Gradient Boosting model was the best as it yielded the lowest missclassification rate (P.S. the gradient boosting model performs several iteractions(i.e. several decision trees), where at each iteration it learns from the previous, thus gradually reducing the misclassification error). 
+
 
 ## Section 5 - Conclusion
 
