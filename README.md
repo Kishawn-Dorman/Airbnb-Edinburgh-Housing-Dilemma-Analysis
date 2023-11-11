@@ -32,6 +32,8 @@ Objective: **Use host and listing characteristics to identify listings that mayb
 - [**Model Evaluation**](https://github.com/Kishawn-Dorman/Airbnb-Edinburgh-Housing-Dilemma-Analysis#model-evaluation)
 
 [**Section 5 - Conclusion**](https://github.com/Kishawn-Dorman/Airbnb-Edinburgh-Housing-Dilemma-Analysis#section-5---conclusion) 
+- [**Recommendation**](https://github.com/Kishawn-Dorman/Airbnb-Edinburgh-Housing-Dilemma-Analysis#recommendation)
+- [**Limitation**](https://github.com/Kishawn-Dorman/Airbnb-Edinburgh-Housing-Dilemma-Analysis#limitation)
 
 [**Skills and Tools Used**](https://github.com/Kishawn-Dorman/Airbnb-Edinburgh-Housing-Dilemma-Analysis#skills-and-tools-used) 
 
