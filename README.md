@@ -47,13 +47,13 @@ Objective: **Use host and listing characteristics to identify listings that mayb
 
 ## Overall Flow Model
 
-![image](https://github.com/Kishawn-Dorman/Airbnb-Edinburgh-Housing-Dilemma-Analysis/assets/146044118/60eca701-4ae6-4130-a5bf-576dab3225df)
+![Screenshot 2023-11-10 211434](https://github.com/Kishawn-Dorman/Airbnb-Edinburgh-Housing-Dilemma-Analysis/assets/146044118/5794b3b2-383d-447d-9ad9-b713c80790dc)
 
 
 ## Section 1 - Data Understanding (SAS E-Miner)
 
-
 ![image](https://github.com/Kishawn-Dorman/Cluster-Analysis-and-Classification-Modelling/assets/146044118/63295d78-b03b-45d5-ba9a-ddb8611cc69b)
+
 
 ### Summary Statistics
 
