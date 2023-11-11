@@ -210,7 +210,7 @@ Thus the original **(Tree Name: "Standard") decision tree** was retained as the 
 
 ### Model Evaluation
 
-![Screenshot 2023-11-10 232903](https://github.com/Kishawn-Dorman/Airbnb-Edinburgh-Housing-Dilemma-Analysis/assets/146044118/c9b27daf-b0ef-4b67-af5b-efb1858b965f)
+![Screenshot 2023-11-10 232903](https://github.com/Kishawn-Dorman/Airbnb-Edinburgh-Housing-Dilemma-Analysis/assets/146044118/bfcf8bd6-686c-46b4-a807-81cd62695d8b)
 
 Five models inclusing the decision tree was compared using the model evaluation node. Gradient Boosting model was the best as it yielded the lowest missclassification rate (P.S. the gradient boosting model performs several iteractions(i.e. several decision trees), where at each iteration it learns from the previous, thus gradually reducing the misclassification error). 
 
@@ -225,7 +225,7 @@ Cluster/segment 2 was chosen as the group of listings likely to comprise of ille
 
 The decision tree model showed that "occupancy rate", "listing income", "calculated host listing counts" and "minimum nights" were not great classifies of illegitimate listings based on this data as the majority of thelistings in the train and validation sample groups fell under 0=listing not engaged in illegitimate rental.
 
-![image](https://github.com/Kishawn-Dorman/Airbnb-Edinburgh-Housing-Dilemma-Analysis/assets/146044118/f7a752cd-8467-41e4-acb1-de7412f617df)
+![Screenshot 2023-11-11 013424](https://github.com/Kishawn-Dorman/Airbnb-Edinburgh-Housing-Dilemma-Analysis/assets/146044118/bd1d778c-3929-44ad-a00a-eaf8a9e9b782)
 
 The decision tree did however, classify some of the listings as 1(the validity of this classification is limited because of the sample for this aspect of the decision tree).
 
