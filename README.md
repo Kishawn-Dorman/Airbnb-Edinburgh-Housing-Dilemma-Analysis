@@ -12,18 +12,18 @@ Problem Statement: **Airbnb hosts are fuelling the impacts mentioned above by re
 
 
 ## Table of Contents
-[**Overall Flow Model**](https://github.com/Kishawn-Dorman/Cluster-Analysis-and-Classification-Modelling#overall-flow-model) 
+[**Overall Flow Model**](https://github.com/Kishawn-Dorman/Airbnb-Edinburgh-Housing-Dilemma-Analysis/tree/main#overall-flow-model) 
 
-[**Section 1 - Data Understanding(SAS E-Miner)**](https://github.com/Kishawn-Dorman/Cluster-Analysis-and-Classification-Modelling#section-1---data-understanding-sas-e-miner) 
-- [**Summary Statistics**](https://github.com/Kishawn-Dorman/Cluster-Analysis-and-Classification-Modelling#summary-statistics)
-- [**Data Visualisation**](https://github.com/Kishawn-Dorman/Cluster-Analysis-and-Classification-Modelling#data-visualisation)
+[**Section 1 - Data Understanding(SAS E-Miner)**](https://github.com/Kishawn-Dorman/Airbnb-Edinburgh-Housing-Dilemma-Analysis/tree/main#section-1---data-understanding-sas-e-miner) 
+- [**Summary Statistics**](https://github.com/Kishawn-Dorman/Airbnb-Edinburgh-Housing-Dilemma-Analysis/tree/main#summary-statistics)
+- [**Data Visualisation**](https://github.com/Kishawn-Dorman/Airbnb-Edinburgh-Housing-Dilemma-Analysis/tree/main#data-visualisation)
 
-[**Section 2 - Data Preparation (Microsoft Excel)**](https://github.com/Kishawn-Dorman/Cluster-Analysis-and-Classification-Modelling#section-2---data-prearation-microsoft-excel) 
-- [**Data Cleaning**](https://github.com/Kishawn-Dorman/Cluster-Analysis-and-Classification-Modelling#data-cleaning)
-- [**Data Transformation**](https://github.com/Kishawn-Dorman/Cluster-Analysis-and-Classification-Modelling#data-transformation)
-- [**Data Reduction**](https://github.com/Kishawn-Dorman/Cluster-Analysis-and-Classification-Modelling#data-reduction)
+[**Section 2 - Data Preparation (Microsoft Excel)**](https://github.com/Kishawn-Dorman/Airbnb-Edinburgh-Housing-Dilemma-Analysis/tree/main#section-2---data-prearation-microsoft-excel) 
+- [**Data Cleaning**](https://github.com/Kishawn-Dorman/Airbnb-Edinburgh-Housing-Dilemma-Analysis/tree/main#data-cleaning)
+- [**Data Transformation**](https://github.com/Kishawn-Dorman/Airbnb-Edinburgh-Housing-Dilemma-Analysis/tree/main#data-transformation)
+- [**Data Reduction**](https://github.com/Kishawn-Dorman/Airbnb-Edinburgh-Housing-Dilemma-Analysis/tree/main#data-reduction)
 
-[**Section 3 - Cluster Analysis**](https://github.com/Kishawn-Dorman/Cluster-Analysis-and-Classification-Modelling#section-3---cluster-analysis) 
+[**Section 3 - Cluster Analysis**](https://github.com/Kishawn-Dorman/Airbnb-Edinburgh-Housing-Dilemma-Analysis/tree/main#section-3---cluster-analysis) 
 
 [**Section 4 - Classification Modelling**](https://github.com/Kishawn-Dorman/Airbnb-Edinburgh-Housing-Dilemma-Analysis/blob/main/README.md#section-4---classification-modelling) 
 - [**Decision Tree**](https://github.com/Kishawn-Dorman/Airbnb-Edinburgh-Housing-Dilemma-Analysis/tree/main#decision-tree)
