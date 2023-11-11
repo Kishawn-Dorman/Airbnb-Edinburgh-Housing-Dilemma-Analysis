@@ -163,7 +163,8 @@ The dataset now comprise of the following:
 
 **Variables Used for Cluster Nodes**
 
-![image](https://github.com/Kishawn-Dorman/Cluster-Analysis-and-Classification-Modelling/assets/146044118/74c7148d-b55d-48b4-8d0b-91a848d2d861)
+![Screenshot 2023-11-10 163034](https://github.com/Kishawn-Dorman/Airbnb-Edinburgh-Housing-Dilemma-Analysis/assets/146044118/d9eb1c56-6ca3-475d-9be3-4eef1576d024)
+
 
 A series of clustering techniques was used by adjusting (i) a type of clustering method and (ii) a type of clustering distance property (standardization or range) in the cluster node settings. Five different clustering settings was used to derive 2-3 clusters with a fairly equal distribution of listings between them.
 
