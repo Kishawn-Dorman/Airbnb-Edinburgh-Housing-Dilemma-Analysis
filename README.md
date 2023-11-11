@@ -1,19 +1,12 @@
 In this project, recommendations and insights are generated to tackle the problem described in the section to follow (i.e. About the project). Firstly SAS E-Miner was used to conduct exploratory data analysis on the "Listings" dataset [can be found here](http://insideairbnb.com/get-the-data). 
-I then perform data preparation (which involves data cleaning, variable reduction, variable creation) using Microsoft Excel. 
-Lastly using SAS E-Miner, a cluster analysis will be executed, followed by a decision tree (classification model) to classify a type/group (cluster) Airbnb hosts in Edinburgh that maybe engaged in illegal short term rental.
-
-Resistance from homeowners and residents in communities with Airbnbs has intensified because of the issues below. 
-
-1.	Pressure property owners into “switching from long-term tenancies to short-term rentals”. This may reduce housing availability through increased rent 		prices and by extension increase housing prices (Guttentag, 2018).
-2.	Bring disturbances with noise and mess from large groups (house party bookings) (Salboy Limited, 2022).
-3.	Influence the atmosphere and ethos of these communities because of “over-tourism” (i.e. too many visitors) (Gallagher, 2021).
-
-Problem Statement: **Airbnb hosts are fuelling the impacts mentioned above by renting out their residential properties as illegal short-term rentals.** 
-
-Objective: **Use host and listing characteristics to identify listings that maybe engaged in illegitmate rental.**
+I then performed data preparation (which involves data cleaning, variable reduction, variable creation) using Microsoft Excel. 
+Lastly using SAS E-Miner, a cluster analysis was executed, followed by a decision tree (classification model) that classifies a type/group (cluster) of Airbnb hosts in Edinburgh that maybe engaged in illegal short term rental.
 
 
 ## Table of Contents
+
+[**About the Project**](https://github.com/Kishawn-Dorman/Airbnb-Edinburgh-Housing-Dilemma-Analysis#about-the-project) 
+
 [**Overall Flow Model**](https://github.com/Kishawn-Dorman/Airbnb-Edinburgh-Housing-Dilemma-Analysis#overall-flow-model) 
 
 [**Section 1 - Data Understanding(SAS E-Miner)**](https://github.com/Kishawn-Dorman/Airbnb-Edinburgh-Housing-Dilemma-Analysis#section-1---data-understanding-sas-e-miner) 
@@ -38,6 +31,18 @@ Objective: **Use host and listing characteristics to identify listings that mayb
 [**Skills and Tools Used**](https://github.com/Kishawn-Dorman/Airbnb-Edinburgh-Housing-Dilemma-Analysis#skills-and-tools-used) 
 
 [**Nodes and Functions Used**](https://github.com/Kishawn-Dorman/Airbnb-Edinburgh-Housing-Dilemma-Analysis#nodes-and-functions-used)
+
+## About the Project
+
+Resistance from homeowners and residents in communities with Airbnbs has intensified because of the issues below. 
+
+1.	Pressure property owners into “switching from long-term tenancies to short-term rentals”. This may reduce housing availability through increased rent 		prices and by extension increase housing prices (Guttentag, 2018).
+2.	Bring disturbances with noise and mess from large groups (house party bookings) (Salboy Limited, 2022).
+3.	Influence the atmosphere and ethos of these communities because of “over-tourism” (i.e. too many visitors) (Gallagher, 2021).
+
+Problem Statement: **Airbnb hosts are fuelling the impacts mentioned above by renting out their residential properties as illegal short-term rentals.** 
+
+Objective: **Use host and listing characteristics to identify listings that maybe engaged in illegitmate rental.**
 
 
 ## Overall Flow Model
@@ -228,12 +233,15 @@ The decision tree did however, classify some of the listings as 1(the validity o
 then 83% chance of that listing being engaged in illegitimate rental.**
 
 ### Recommendation
+
 Although the variables used for the classification model had a disproportionate sample groups, it revealled that illegitimate rental is very much present amongst Airbnb hosts. As a course of action, exploring the deployment of classification model similiar to what was created above would certainly help with detecting the hosts and/or properties being disruptive and harming Airbnb's ecosystem. The integration/ consideration of other variables like whether or not a host and/or listing has "booking rules" & "guest verification criteria" would certainly present new avenues for detection. 
 
 ### Limitation
+
 During the data preparation phase many issues was found that could undermine the analysis and ultimately the model. A few listings was identified as being potentially affected by unusually high price values as the appeared to be outliers. Although the outliers may have been addressed, the credibility and particularly the accuracy of the classification model could have still been affected by hidden data errors. For example, a price value within the average range of the dataset would be more difficult to detect, than a price value extremely high or low.  
 
 ## References
+
 Airbnb, Inc., 2023. How do I read my performance data for occupancy and rates?. [Online] 
 Available at: https://www.airbnb.co.uk/help/article/2715/?_set_bev_on_new_domain=1679103185_YTdmMjJhOGUwMjgw
 [Accessed 15 May 2023].
@@ -256,6 +264,7 @@ Available at: https://salboy.co.uk/2022/09/a-look-at-airbnbs-and-their-impact-on
 
 
 ## Skills and tools used
+
 - Exploratory Data Analysis (PCA, Univariate analysis, Bivariate analysis)
 - Predictive Analytics
 - Prescriptive Analytics
@@ -263,6 +272,7 @@ Available at: https://salboy.co.uk/2022/09/a-look-at-airbnbs-and-their-impact-on
 - Microsoft Excel
 
 ## Nodes and Functions used
+
 - Variable Clustering
 - Principal Components
 - StatExplore
