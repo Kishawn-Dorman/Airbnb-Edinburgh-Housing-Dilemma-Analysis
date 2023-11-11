@@ -10,6 +10,8 @@ Resistance from homeowners and residents in communities with Airbnbs has intensi
 
 Problem Statement: **Airbnb hosts are fuelling the impacts mentioned above by renting out their residential properties as illegal short-term rentals.** 
 
+Objective: **Use host and listing characteristics to identify listings that maybe engaged in illegitmate rental.**
+
 
 ## Table of Contents
 [**Overall Flow Model**](https://github.com/Kishawn-Dorman/Airbnb-Edinburgh-Housing-Dilemma-Analysis#overall-flow-model) 
@@ -193,7 +195,7 @@ The decision tree performed well at accurately classifying listings as the missc
 
 ![Screenshot 2023-11-10 231825](https://github.com/Kishawn-Dorman/Airbnb-Edinburgh-Housing-Dilemma-Analysis/assets/146044118/ef43307d-c585-4ce2-bf8e-961a0bc71664)
 
-Although the decision tree model performed well at classification, the variables selected by the algorithm were not great classfiers of illegitmate listings. As a result two decision trees was created with different parameters to change how the algorithm selects variables and classifies those variables in the decision tree. But, unfortunately this did not yield any meaningful changes towards having strong classifies of illegitmate listings. 
+Although the decision tree model performed well at classification, the variables selected by the algorithm were not great classfiers of illegitmate listings (the accuracy of the decision tree lowers as you progress down the tree). As a result two decision trees was created with different parameters to change how the algorithm selects variables and classifies those variables in the decision tree. But, unfortunately this did not yield any meaningful changes towards having strong classifies of illegitmate listings. 
 
 Thus the original **(Tree Name: "Standard") decision tree** was retained as the classfication model.
 
@@ -206,6 +208,13 @@ Five models inclusing the decision tree was compared using the model evaluation 
 
 ## Section 5 - Conclusion
 
+Cluster 1 - Low-Priced Listings
+Cluster 2 - Standard-Priced Listings
+Cluster 3 - High-Income Listings
+
+Cluster/segment 2 was chosen as the group of listings likely to comprise of illegitmate listings. Although the 3 of the clusters generated had different characteristics, it was evident that illegitmate activity from listings in each of these clusters is very much a possibility. 
+
+The decision tree model had high accuracy but the variables 
 only 2 out of the 15 input variables was recognised by the algorithm as being important to predicting the target. This limits the real world identification illegal short-term renting as having multiple characteristics (variables) allows for better identification as opposed to having only 2 characteristics.
 
 The creation and/or inclusion of more host characteristics variables (e.g. booking rules & guest verification criteria) into the model would add more precise classifications to the model and add value to the models applicability to the real-world environment. 
