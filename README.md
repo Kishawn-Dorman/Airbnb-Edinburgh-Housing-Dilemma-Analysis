@@ -194,8 +194,17 @@ Thus the original **(Tree Name: "Standard") decision tree** was retained as the 
 
 ![Screenshot 2023-11-10 232903](https://github.com/Kishawn-Dorman/Airbnb-Edinburgh-Housing-Dilemma-Analysis/assets/146044118/c9b27daf-b0ef-4b67-af5b-efb1858b965f)
 
-Looking at the decision tree  
+Five models inclusing the decision tree was compared using the model evaluation node. Gradient Boosting model was the best as it yielded the lowest missclassification rate (P.S. the gradient boosting model performs several iteractions(i.e. several decision trees), where at each iteration it learns from the previous, thus gradually reducing the misclassification error). 
 
+## Section 5 - Conclusion
+
+only 2 out of the 15 input variables was recognised by the algorithm as being important to predicting the target. This limits the real world identification illegal short-term renting as having multiple characteristics (variables) allows for better identification as opposed to having only 2 characteristics.
+
+The creation and/or inclusion of more host characteristics variables (e.g. booking rules & guest verification criteria) into the model would add more precise classifications to the model and add value to the models applicability to the real-world environment. 
+
+During the data preparation phase many issues was found that could undermine the analysis and ultimately the model. As shown in table 4, a few listings was identified as being potentially affected by unusually high price values as the appeared to be outliers in figure 1. Although the outliers may have been addressed, the credibility and particularly the accuracy of the classification model could have still been affected by hidden data errors. For example, a price value within the average range of the dataset would be more difficult to detect, than a price value extremely high or low.  
+
+Lastly, the clusters created for the classification model can also be affected by these data errors. But, on the hand the clusters created did show great stability when the cluster settings was tested against sample data (90% of data). This means that if changes (e.g. minor errors) to the data parameters were to occur, it would be unlikely to derive different clusters.
 
 ## Skills and tools used
 - Exploratory Data Analysis (PCA, Univariate analysis, Bivariate analysis)
