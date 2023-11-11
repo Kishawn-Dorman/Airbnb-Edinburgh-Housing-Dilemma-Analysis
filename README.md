@@ -141,7 +141,7 @@ Majority of the 1431 listings were entire home/apartments & private rooms and on
 
 ![image](https://github.com/Kishawn-Dorman/Cluster-Analysis-and-Classification-Modelling/assets/146044118/567bc5b5-91b6-43b2-a802-bafe96977b79)
 
-Following a correlation analysis on the dataset in SAS Enterprise Miner, a few pairs of variables was identified with a correlation above 50% (appendix 1). Out of these pairs of the variables identified, the following variables was removed; bedrooms, number_of_reviews_l30d and number_of_reviews_ltm.
+Following a correlation analysis on the dataset in SAS Enterprise Miner, a few pairs of variables was identified with a correlation above 50%. Out of these pairs of the variables identified, the following variables was removed; bedrooms, number_of_reviews_l30d and number_of_reviews_ltm.
 
 ![image](https://github.com/Kishawn-Dorman/Cluster-Analysis-and-Classification-Modelling/assets/146044118/d17dc569-13bf-4174-acfb-0635de65f846)
 
@@ -177,7 +177,7 @@ Cluster 3 will be classed as **high income generating** listings because its mea
 
 ## Section 4 - Classification Modelling
 
-Based on the clusters/segments generated, segment 2 seems the most likely out of the segments to contain listings involved in illegal short-term rental. With that in mind this segment will be used along with **a binary (0=No, 1=Yes) target variable that represents whether or not a listing is likely to be illegitmately rented out or not** to build a decision tree.  
+Based on the clusters/segments generated, segment 2 seems the most likely out of the segments to contain listings involved in illegal short-term rental. With that in mind this segment will be used along with **a binary (0=No, 1=Yes) target variable that represents whether or not a listing is likely to be illegitimately rented out or not** to build a decision tree.  
 
 ### Decision Tree
 
@@ -195,7 +195,7 @@ The decision tree performed well at accurately classifying listings as the missc
 
 ![Screenshot 2023-11-10 231825](https://github.com/Kishawn-Dorman/Airbnb-Edinburgh-Housing-Dilemma-Analysis/assets/146044118/ef43307d-c585-4ce2-bf8e-961a0bc71664)
 
-Although the decision tree model performed well at classification, the variables selected by the algorithm were not great classfiers of illegitmate listings (the accuracy of the decision tree lowers as you progress down the tree). As a result two decision trees was created with different parameters to change how the algorithm selects variables and classifies those variables in the decision tree. But, unfortunately this did not yield any meaningful changes towards having strong classifies of illegitmate listings. 
+Although the decision tree model performed well at classification, the variables selected by the algorithm were not great classfiers of illegitimate listings (the accuracy of the decision tree lowers as you progress down the tree). As a result two decision trees was created with different parameters to change how the algorithm selects variables and classifies those variables in the decision tree. But, unfortunately this did not yield any meaningful changes towards having strong classifies of illegitimate listings. 
 
 Thus the original **(Tree Name: "Standard") decision tree** was retained as the classfication model.
 
@@ -212,16 +212,46 @@ Cluster 1 - Low-Priced Listings
 Cluster 2 - Standard-Priced Listings
 Cluster 3 - High-Income Listings
 
-Cluster/segment 2 was chosen as the group of listings likely to comprise of illegitmate listings. Although the 3 of the clusters generated had different characteristics, it was evident that illegitmate activity from listings in each of these clusters is very much a possibility. 
+Cluster/segment 2 was chosen as the group of listings likely to comprise of illegitimate listings. Although the 3 of the clusters generated had different characteristics, it was evident that illegitmate activity from listings in each of these clusters is very much a possibility. 
 
-The decision tree model had high accuracy but the variables 
-only 2 out of the 15 input variables was recognised by the algorithm as being important to predicting the target. This limits the real world identification illegal short-term renting as having multiple characteristics (variables) allows for better identification as opposed to having only 2 characteristics.
+The decision tree model showed that "occupancy rate", "listing income", "calculated host listing counts" and "minimum nights" were not great classifies of illegitimate listings based on this data as the majority of thelistings in the train and validation sample groups fell under 0=listing not engaged in illegitimate rental.
 
-The creation and/or inclusion of more host characteristics variables (e.g. booking rules & guest verification criteria) into the model would add more precise classifications to the model and add value to the models applicability to the real-world environment. 
+![image](https://github.com/Kishawn-Dorman/Airbnb-Edinburgh-Housing-Dilemma-Analysis/assets/146044118/f7a752cd-8467-41e4-acb1-de7412f617df)
 
-During the data preparation phase many issues was found that could undermine the analysis and ultimately the model. As shown in table 4, a few listings was identified as being potentially affected by unusually high price values as the appeared to be outliers in figure 1. Although the outliers may have been addressed, the credibility and particularly the accuracy of the classification model could have still been affected by hidden data errors. For example, a price value within the average range of the dataset would be more difficult to detect, than a price value extremely high or low.  
+The decision tree did however, classify some of the listings as 1(the validity of this classification is limited because of the sample for this aspect of the decision tree).
 
-Lastly, the clusters created for the classification model can also be affected by these data errors. But, on the hand the clusters created did show great stability when the cluster settings was tested against sample data (90% of data). This means that if changes (e.g. minor errors) to the data parameters were to occur, it would be unlikely to derive different clusters.
+**Standard-Priced Listings 
+->-> occupancy rate of >=54% then 68% chance of it being 1 (illegitimate) 
+->-> adding on to the prev listing criteria, if it has listing income >=36,900 or the income is not defined for the listing, 
+then 83% chance of that listing being engaged in illegitimate rental.**
+
+### Recommendation
+Although the variables used for the classification model had a disproportionate sample groups, it revealled that illegitimate rental is very much present amongst Airbnb hosts. As a course of action, exploring the deployment of classification model similiar to what was created above would certainly help with detecting the hosts and/or properties being disruptive and harming Airbnb's ecosystem. The integration/ consideration of other variables like whether or not a host and/or listing has "booking rules" & "guest verification criteria" would certainly present new avenues for detection. 
+
+### Limitation
+During the data preparation phase many issues was found that could undermine the analysis and ultimately the model. A few listings was identified as being potentially affected by unusually high price values as the appeared to be outliers. Although the outliers may have been addressed, the credibility and particularly the accuracy of the classification model could have still been affected by hidden data errors. For example, a price value within the average range of the dataset would be more difficult to detect, than a price value extremely high or low.  
+
+## References
+Airbnb, Inc., 2023. How do I read my performance data for occupancy and rates?. [Online] 
+Available at: https://www.airbnb.co.uk/help/article/2715/?_set_bev_on_new_domain=1679103185_YTdmMjJhOGUwMjgw
+[Accessed 15 May 2023].
+
+Airbtics, LLC. , 2022. How much can I make on Airbnb?. [Online] 
+Available at: https://airbtics.com/airbnb-income-calculator/
+[Accessed 16 May 2023].
+
+Gallagher, K., 2021. What Is Overtourism and Why Is It Such a Big Problem?:Treehugger. [Online] 
+Available at: https://www.treehugger.com/what-is-overtourism-definition-and-examples-5181255
+[Accessed 9 March 2023].
+
+Guttentag, D., 2018. What Airbnb really does to a neighbourhood:BBC. [Online] 
+Available at: https://www.bbc.co.uk/news/business-45083954
+[Accessed 9 March 2023].
+
+Salboy Limited, 2022. A Look at Airbnbs and Their Impact on Local Communities:Salboy Limited. [Online] 
+Available at: https://salboy.co.uk/2022/09/a-look-at-airbnbs-and-their-impact-on-local-communities/
+[Accessed 9 March 2023].
+
 
 ## Skills and tools used
 - Exploratory Data Analysis (PCA, Univariate analysis, Bivariate analysis)
