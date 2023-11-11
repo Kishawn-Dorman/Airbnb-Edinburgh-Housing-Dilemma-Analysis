@@ -179,7 +179,15 @@ Based on the clusters/segments generated, segment 2 seems the most likely out of
 ![Screenshot 2023-11-10 223514](https://github.com/Kishawn-Dorman/Airbnb-Edinburgh-Housing-Dilemma-Analysis/assets/146044118/e2f57bc9-5886-4da7-ae2e-65ab484e6c32)
 
 The default settings for the decision tree node was retained with the exception of the maximum depth being changed from 6 to 3. Although, retaining a higher depth would not necessarily be detrimental to the model results, having higher depth = lower accuracy in the lower leaf nodes (which does not help the aim of classifying listings with high accuracy).
-The decision performed well at accurately classifying listings as the missclassifcation rate, maximum absolute error and average squared error rates showed high accuracy and stability across the train, validationa and test data sets/partitions (note: to simulate a supervised and unsupervised environment the data was split into a "train", "validation" and "test" partition; 40%, 40%, 30%).
+
+The decision tree performed well at accurately classifying listings as the missclassifcation rate, maximum absolute error and average squared error rates showed high accuracy and stability across the train, validation and test data sets/partitions (note: to simulate a supervised and unsupervised environment the data was split into a "train", "validation" and "test" partition; 40%, 40%, 30%).
+
+![Screenshot 2023-11-10 231514](https://github.com/Kishawn-Dorman/Airbnb-Edinburgh-Housing-Dilemma-Analysis/assets/146044118/a6d3eec8-57ac-40b6-b6cb-b8a09b44aeb2)
+
+![Screenshot 2023-11-10 231825](https://github.com/Kishawn-Dorman/Airbnb-Edinburgh-Housing-Dilemma-Analysis/assets/146044118/ef43307d-c585-4ce2-bf8e-961a0bc71664)
+
+Although the decision tree model performed well at classification, the variables selected by the algorithm were not great classfiers of illegitmate listings. As a result two decisions was created with different parameters to change how the algorithm selects variables and classifies those variables in the decision tree. But, unfortunately this did not yield any meaningful changes towards having strong classifies of illegitmate listings.   
+
 
 ## Skills and tools used
 - Exploratory Data Analysis (PCA, Univariate analysis, Bivariate analysis)
