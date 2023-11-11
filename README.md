@@ -168,13 +168,14 @@ The dataset now comprise of the following:
 
 A series of clustering techniques was used by adjusting (i) a type of clustering method and (ii) a type of clustering distance property (standardization or range) in the cluster node settings. Five different clustering settings was used to derive 2-3 clusters with a fairly equal distribution of listings between them.
 
-![image](https://github.com/Kishawn-Dorman/Cluster-Analysis-and-Classification-Modelling/assets/146044118/14a88be7-28a9-415f-970e-1938a9d9747b)
+![Screenshot 2023-11-10 164324](https://github.com/Kishawn-Dorman/Airbnb-Edinburgh-Housing-Dilemma-Analysis/assets/146044118/458d025b-f55f-47fc-992e-f2788e488351)
+
 
 **Cluster Results**
 
-![image](https://github.com/Kishawn-Dorman/Cluster-Analysis-and-Classification-Modelling/assets/146044118/e3d7069b-4244-4afd-8fe2-717ed79a8cb0)
+![Screenshot 2023-11-10 164813](https://github.com/Kishawn-Dorman/Airbnb-Edinburgh-Housing-Dilemma-Analysis/assets/146044118/0f0910ff-2ae3-4178-8c92-712aabfc7fb2)
 
-![image](https://github.com/Kishawn-Dorman/Cluster-Analysis-and-Classification-Modelling/assets/146044118/9dac4437-c17e-4a54-b54b-8d49d6ac6002)
+![Screenshot 2023-11-10 165634](https://github.com/Kishawn-Dorman/Airbnb-Edinburgh-Housing-Dilemma-Analysis/assets/146044118/fb0787a8-3779-4f00-855d-1cfe3f43b1cd)
 
 Based on the mean statustics the clusters were interpreted as follows. Cluster 1 will be classed as **low-priced listings** because it has the lowest mean listing income and highest mean maximum nights (hosts may opt for higher maximum nights at lower price to attract long-stayers with a hope of establish a source of continuous income for the course of the year). 
 
