@@ -1,5 +1,7 @@
 In this project, recommendations and insights are generated to tackle the problem described in the section to follow (i.e., about the project). Firstly, SAS E-Miner was used to conduct exploratory data analysis on the "Listings" dataset, which [can be found here](http://insideairbnb.com/get-the-data). 
+
 I then performed data preparation (which involves data cleaning, variable reduction, and variable creation) using Microsoft Excel. 
+
 Lastly, using SAS E-Miner, a cluster analysis was executed, followed by a decision tree (classification model) that classifies a type or group (cluster) of Airbnb hosts in Edinburgh that may be engaged in illegal short-term rental.
 
 
@@ -34,16 +36,15 @@ Lastly, using SAS E-Miner, a cluster analysis was executed, followed by a decisi
 
 ## About the Project
 
-Resistance from homeowners and residents in communities with Airbnbs has intensified because of the issues below. 
+Resistance from homeowners and residents in communities with Airbnbs has intensified because of the issues below. 
 
-1.	Pressure property owners into “switching from long-term tenancies to short-term rentals”. This may reduce housing availability through increased rent 		prices and by extension increase housing prices (Guttentag, 2018).
-2.	Bring disturbances with noise and mess from large groups (house party bookings) (Salboy Limited, 2022).
-3.	Influence the atmosphere and ethos of these communities because of “over-tourism” (i.e. too many visitors) (Gallagher, 2021).
+1. Pressure property owners into “switching from long-term tenancies to short-term rentals." This may reduce housing availability through increased rent prices and, by extension, increase housing prices (Guttentag, 2018).
+2. Bring disturbances with noise and mess from large groups (house party bookings) (Salboy Limited, 2022).
+3. Influence the atmosphere and ethos of these communities because of “over-tourism” (i.e., too many visitors) (Gallagher, 2021).
 
-Problem Statement: **Airbnb hosts are fuelling the impacts mentioned above by renting out their residential properties as illegal short-term rentals.** 
+Problem Statement: **Airbnb hosts are fueling the impacts mentioned above by renting out their residential properties as illegal short-term rentals.**
 
-Objective: **Use host and listing characteristics to identify listings that maybe engaged in illegitmate rental.**
-
+Objective: **Use host and listing characteristics to identify listings that may be engaged in illegitimate rental.**
 
 ## Overall Flow Model
 
