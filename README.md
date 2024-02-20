@@ -68,15 +68,15 @@ Figure 1 - Distribution of Interval & Binary Variables
 ![image](https://github.com/Kishawn-Dorman/Cluster-Analysis-and-Classification-Modelling/assets/146044118/ef72c8d3-644b-4744-91e9-2c44ed43584f)
 
 
-Figure 1 shows all binary and interval variables except longitude, latitude & last_scraped as histograms. The white bar depicted on some of the charts represents the amount of missing data. 
+Figure 1 shows all binary and interval variables except longitude, latitude, and last_scraped as histograms. The white bar depicted on some of the charts represents the amount of missing data. 
 
-In figure 1 and table 1 the minimum and maximum values displayed for ‘bedrooms’ & ‘price’ are distant from each other, thus suggests that outliers maybe present.
+In Figure 1 and Table 1, the minimum and maximum values displayed for ‘bedrooms’ and ‘price’ are distant from each other, thus suggesting that outliers may be present.
 
-The summaries statistics revealed that the data is mainly plagued by the following: 
-(i)	24 out of the 75 variables are missing data, 
-(ii)	possible outliers for ‘bedrooms’ & ‘price’, 
-(iii)	8 out of the 32 class variables have 128+ levels/categories (impractical to carry out an analysis on these variables, data reduction needed).
-(iv)	Possible correlation between variables based on figure 1 (variable no. 34-37, 40 47 & 49, 55-62).
+The summary statistics revealed that the data is mainly plagued by the following: 
+(i) 24 out of the 75 variables are missing data. 
+(ii) possible outliers for ‘bedrooms’ and ‘price’. 
+(iii) 8 out of the 32 class variables have 128+ levels or categories (it is impractical to carry out an analysis on these variables; data reduction is needed).
+(iv) Possible correlation between variables based on Figure 1 (variables 34–37, 40, 47, and 49, 55–62).
 
 ### Data Visualisation
 
@@ -84,7 +84,7 @@ Figure 2
 
 ![image](https://github.com/Kishawn-Dorman/Cluster-Analysis-and-Classification-Modelling/assets/146044118/59419b3b-1aef-4b4e-b6d6-86b938f8c231)
 
-Figure 2 shows that listings are somewhat fairly distributed throughout most of the neighbourhoods which does help to discern low and high-end areas. This will add some validity to the findings from this analysis of listings in Edinburgh neighbourhoods.
+Figure 2 shows that listings are somewhat fairly distributed throughout most of the neighbourhoods, which does help to discern low- and high-end areas. This will add some validity to the findings from this analysis of listings in Edinburgh neighbourhoods.
 	
 Figure 3
 
@@ -94,8 +94,8 @@ Figure 4
 
 ![image](https://github.com/Kishawn-Dorman/Cluster-Analysis-and-Classification-Modelling/assets/146044118/e301e605-0c2c-48e1-94df-c8fb2f45d465)
 
-Figure 3 shows that the vast majority of listings are either entire homes/apartments and private rooms, and figure 4 shows the average daily price of listings based on its number of bedrooms. 
-Based on figure 3 and 4 it seems that these two types of properties (entire homes/apartment & private rooms) are the most likely to have hosts engaged in illegal short term rentals because the number of bedrooms and daily price of these properties are much higher than hotel rooms and shared rooms.
+Figure 3 shows that the vast majority of listings are either entire homes or apartments with private rooms, and Figure 4 shows the average daily price of listings based on their number of bedrooms. 
+Based on figures 3 and 4, it seems that these two types of properties (entire homes, apartments, and private rooms) are the most likely to have hosts engaged in illegal short-term rentals because the number of bedrooms and daily price of these properties are much higher than hotel rooms and shared rooms.
 
 
 ## Section 2 - Data Preparation (Microsoft Excel)
@@ -106,16 +106,15 @@ Table 2 – Deleted Variables
 
 ![image](https://github.com/Kishawn-Dorman/Cluster-Analysis-and-Classification-Modelling/assets/146044118/1c414011-8e06-473d-98f1-42a5b8af35ad)
  
-As identified in the previous phase the bathrooms_text variable contain missing data. Using the information provided in the description & listing_url variables, the missing data for 13 listings affected within the bathrooms_test variable was filled in via Excel. 
-The missing data in 'bedrooms' (105), 'last_review' and 'reviews_per_month' (same 665 listings) variables was removed (770) from the dataset by filtering the blank observations for each variable and deleting them.
+As identified in the previous phase, the bathrooms_text variable contains missing data. Using the information provided in the description and listing_url variables, the missing data for 13 listings affected within the bathrooms_test variable was filled in via Excel. The missing data in 'bedrooms' (105), 'last_review', and 'reviews_per_month' (same 665 listings) variables was removed (770) from the dataset by filtering the blank observations for each variable and deleting them.
 
 Figure 5 
 
 ![image](https://github.com/Kishawn-Dorman/Cluster-Analysis-and-Classification-Modelling/assets/146044118/e4ac4c3b-1b2b-4716-b6e9-8d62aaae8de6)
 
 
-The description variable was once again used for the listings with 'bedroom' outlier values. Based on the information contained in this variable, the 'bedroom' outlier values are indeed accurate and was retained in the dataset. 
-On the other hand the price variable had 6 unverifiable outliers (price on the listings website page did not correspond with the dataset’s price) and as such was removed by filtering out any listing priced under 5000. 
+The description variable was once again used for the listings with 'bedroom' outlier values. Based on the information contained in this variable, the 'bedroom' outlier values are indeed accurate and were retained in the dataset. 
+On the other hand, the price variable had 6 unverifiable outliers (the price on the listings website page did not correspond with the dataset’s price) and, as such, was removed by filtering out any listing priced under £5,000.
 
 Table 3 – Price Variable Outliers
 
@@ -130,32 +129,31 @@ Figure 6
 ![image](https://github.com/Kishawn-Dorman/Cluster-Analysis-and-Classification-Modelling/assets/146044118/1dacc7a4-c19e-46cc-ab11-e66012693882)
 
 (i) Occupancy Rate (OR) = reviews_per_month x minimum_nights x 12(months) / (365-availability_365) 
-The formula for OR was derived from an article from Airbnb (2023) that detailed the occupancy rate as “the number of nights booked divided by total nights available to be booked”.
+The formula for OR was derived from an article from Airbnb (2023) that detailed the occupancy rate as “the number of nights booked divided by the total nights available to be booked.”
 
 Figure 7
 
 ![image](https://github.com/Kishawn-Dorman/Cluster-Analysis-and-Classification-Modelling/assets/146044118/da844671-f8ed-496b-bc24-d2a833306385)
 
-Occupancy rate variable: 
-42 listings had full 365 availability = Since this was the case, the occupancy rate and listing income was set to 0 for these listings. 
-1431 listings had 0 availability = thus the occupancy rate formula for these listings was changed to "reviews per month x minimum_nights x 12 / 365". 
+Occupancy rate variables: 
+42 listings had full-365 availability. Since this was the case, the occupancy rate and listing income were set to 0 for these listings. 
+1431 listings had 0 availability, so the occupancy rate formula for these listings was changed to "reviews per month x minimum nights x 12 / 365." 
 
-(ii) Listing Income (LI) = occupancy rate x price x 365 
-The formula for LI was derived from Airbtics (2022). They stated that revenue (listing_income) can be calculated by “multiplying the year-round occupancy rate” with the “average daily rate”.
+(ii) Listing Income (LI) = occupancy rate x price x 365 The formula for LI was derived from Airbtics (2022). They stated that revenue (listing_income) can be calculated by “multiplying the year-round occupancy rate” with the “average daily rate.”
 
-Majority of the 1431 listings were entire home/apartments & private rooms and on average 'reviews per month' appear to be under 1 review. Visitors of these listings may have been uninformed about reviews by hosts to avoid detection as multiple rentals over the span of the year should result in multiple reviews (which is not reflected).
-	
+The majority of the 1431 listings were entire homes, apartments, and private rooms, and on average,'reviews  per month' appear to be under 1 review. Visitors to these listings may have been uninformed about reviews by hosts to avoid detection, as multiple rentals over the span of the year should result in multiple reviews (which are not reflected).
+
 ### Data Reduction
 
 ![image](https://github.com/Kishawn-Dorman/Cluster-Analysis-and-Classification-Modelling/assets/146044118/567bc5b5-91b6-43b2-a802-bafe96977b79)
 
-Following a correlation analysis on the dataset in SAS Enterprise Miner, a few pairs of variables was identified with a correlation above 50%. Out of these pairs of the variables identified, the following variables was removed; bedrooms, number_of_reviews_l30d and number_of_reviews_ltm.
+Following a correlation analysis on the dataset in SAS Enterprise Miner, a few pairs of variables were identified with a correlation above 50%. Out of these pairs of variables identified, the following variables were removed: bedrooms, number_of_reviews_l30d, and number_of_reviews_ltm.
 
 ![image](https://github.com/Kishawn-Dorman/Cluster-Analysis-and-Classification-Modelling/assets/146044118/d17dc569-13bf-4174-acfb-0635de65f846)
 
-PCA’s outcome from reducing 12 interval variables, yielded just 1 less variable at a confidence threshold of 95%. Since only 1 less variable was generated the interval variables will be retained over the PC’s for the next phase of the analysis. 
+PCA’s outcome from reducing 12 interval variables yielded just 1 less variable at a confidence threshold of 95%. Since only one less variable was generated, the interval variables will be retained over the PC’s for the next phase of the analysis. 
 
-The dataset now comprise of the following:
+The dataset now comprises the following:
 
 ![image](https://github.com/Kishawn-Dorman/Cluster-Analysis-and-Classification-Modelling/assets/146044118/c0f02b57-c256-4e12-9c01-acdecad8e9b8)
 
@@ -167,7 +165,7 @@ The dataset now comprise of the following:
 ![Screenshot 2023-11-10 163034](https://github.com/Kishawn-Dorman/Airbnb-Edinburgh-Housing-Dilemma-Analysis/assets/146044118/d9eb1c56-6ca3-475d-9be3-4eef1576d024)
 
 
-A series of clustering techniques was used by adjusting (i) a type of clustering method and (ii) a type of clustering distance property (standardization or range) in the cluster node settings. Five different clustering settings was used to derive 2-3 clusters with a fairly equal distribution of listings between them.
+A series of clustering techniques was used by adjusting (i) a type of clustering method and (ii) a type of clustering distance property (standardisation or range) in the cluster node settings. Five different clustering settings were used to derive 2–3 clusters with a fairly equal distribution of listings between them.
 
 ![Screenshot 2023-11-10 164324](https://github.com/Kishawn-Dorman/Airbnb-Edinburgh-Housing-Dilemma-Analysis/assets/146044118/458d025b-f55f-47fc-992e-f2788e488351)
 
@@ -178,16 +176,16 @@ A series of clustering techniques was used by adjusting (i) a type of clustering
 
 ![Screenshot 2023-11-10 165634](https://github.com/Kishawn-Dorman/Airbnb-Edinburgh-Housing-Dilemma-Analysis/assets/146044118/fb0787a8-3779-4f00-855d-1cfe3f43b1cd)
 
-Based on the mean statustics the clusters were interpreted as follows. Cluster 1 will be classed as **low-priced listings** because it has the lowest mean listing income and highest mean maximum nights (hosts may opt for higher maximum nights at lower price to attract long-stayers with a hope of establish a source of continuous income for the course of the year). 
+Based on the mean statistics, the clusters were interpreted as follows: Cluster 1 will be classified as **low-priced listings** because it has the lowest mean listing income and the highest mean maximum nights (hosts may opt for higher maximum nights at a lower price to attract long-stayers with the hope of establishing a source of continuous income for the course of the year). 
 
-Cluster 2 will be classed as **standard-priced listings** because its mean listing income is medial out of the three clusters and had a much more industry standard maximum nights’ limits in comparison to the other clusters. Although the occupancy rate is marginally more than cluster 1 (lowest occupancy rate), it is still very much within the logical occupancy rate of a genuine short-term Airbnb listing. But the mean availability of listings in this cluster was significantly lower than the other clusters, which suggest that on average these listings may be rented out all year round. 
+Cluster 2 will be classified as **standard-priced listings** because its mean listing income is the median out of the three clusters and has much higher industry-standard maximum nights’ limits in comparison to the other clusters. Although the occupancy rate is marginally higher than cluster 1 (the lowest occupancy rate), it is still very much within the logical occupancy rate of a genuine short-term Airbnb listing. But the mean availability of listings in this cluster was significantly lower than the other clusters, which suggests that on average, these listings may be rented out all year round. 
 
-Cluster 3 will be classed as **high income generating** listings because its mean listing income and price are the highest out the 3 clusters. Their minimum nights value is also the highest (suggest that hosts may charge a lofty price for each booking), number of reviews the lowest (since listings are possibly priced the highest, visitors may be very few and as a result less reviews) and calculated host listings count the highest (suggest that these host may be running an accommodation business). 
+Cluster 3 will be classified as a **high income-generating** listing because its mean listing income and price are the highest out of the 3 clusters. Their minimum nights value is also the highest (suggest that hosts may charge a lofty price for each booking), the number of reviews is the lowest (since listings are possibly priced the highest, visitors may be very few and, as a result, fewer reviews), and calculated host listings count the highest (suggest that these hosts may be running an accommodation business). 
 
 
 ## Section 4 - Classification Modelling
 
-Based on the clusters/segments generated, segment 2 seems the most likely out of the segments to contain listings involved in illegal short-term rental. With that in mind this segment will be used along with **a binary (0=No, 1=Yes) target variable that represents whether or not a listing is likely to be illegitimately rented out or not** to build a decision tree.  
+Based on the clusters and segments generated, segment 2 seems the most likely out of the segments to contain listings involved in illegal short-term rental. With that in mind, this segment will be used along with **a binary (0=no, 1=yes) target variable that represents whether or not a listing is likely to be illegitimately rented out or not** to build a decision tree.  
 
 ### Decision Tree
 
@@ -197,23 +195,23 @@ Based on the clusters/segments generated, segment 2 seems the most likely out of
 
 ![Screenshot 2023-11-10 223514](https://github.com/Kishawn-Dorman/Airbnb-Edinburgh-Housing-Dilemma-Analysis/assets/146044118/3fd80655-fef2-47d9-874f-32e1fdd921eb)
 
-The default settings for the decision tree node was retained with the exception of the maximum depth being changed from 6 to 3. Although, retaining a higher depth would not necessarily be detrimental to the model results, having higher depth = lower accuracy in the lower leaf nodes (which does not help the aim of classifying listings with high accuracy).
+The default settings for the decision tree node were retained, with the exception of the maximum depth being changed from 6 to 3. Although retaining a higher depth would not necessarily be detrimental to the model results, having a higher depth means lower accuracy in the lower leaf nodes (which does not help the aim of classifying listings with high accuracy).
 
-The decision tree performed well at accurately classifying listings as the missclassifcation rate, maximum absolute error and average squared error rates showed high accuracy and stability across the train, validation and test data sets/partitions (note: to simulate a supervised and unsupervised environment the data was split into a "train", "validation" and "test" partition; 40%, 30%, 30%).
+The decision tree performed well at accurately classifying listings, as the missclassification rate, maximum absolute error, and average squared error rates showed high accuracy and stability across the train, validation, and test data sets and partitions (note: to simulate a supervised and unsupervised environment, the data was split into a "train," "validation," and "test" partition; 40%, 30%, 30%).
 
 ![Screenshot 2023-11-10 231514](https://github.com/Kishawn-Dorman/Airbnb-Edinburgh-Housing-Dilemma-Analysis/assets/146044118/a6403b78-8c15-40b4-a7be-b9efe83133e8)
 
 ![Screenshot 2023-11-10 231825](https://github.com/Kishawn-Dorman/Airbnb-Edinburgh-Housing-Dilemma-Analysis/assets/146044118/d2f2582e-f308-427f-89d7-449248ce88ce)
 
-Although the decision tree model performed well at classification, the variables selected by the algorithm were not great classfiers of illegitimate listings (the accuracy of the decision tree lowers as you progress down the tree). As a result two decision trees was created with different parameters to change how the algorithm selects variables and classifies those variables in the decision tree. But, unfortunately this did not yield any meaningful changes towards having strong classifies of illegitimate listings. 
+Although the decision tree model performed well at classification, the variables selected by the algorithm were not great classifiers of illegitimate listings (the accuracy of the decision tree lowers as you progress down the tree). As a result, two decision trees were created with different parameters to change how the algorithm selects variables and classifies those variables in the decision tree. But, unfortunately, this did not yield any meaningful changes towards having strong classifications of illegitimate listings. 
 
-Thus the original **(Tree Name: "Standard") decision tree** was retained as the classfication model.
+Thus, the original **(Tree Name: "Standard") decision tree** was retained as the classification model.
 
 ### Model Evaluation
 
 ![Screenshot 2023-11-10 232903](https://github.com/Kishawn-Dorman/Airbnb-Edinburgh-Housing-Dilemma-Analysis/assets/146044118/bfcf8bd6-686c-46b4-a807-81cd62695d8b)
 
-Five models inclusing the decision tree was compared using the model evaluation node. Gradient Boosting model was the best as it yielded the lowest missclassification rate (P.S. the gradient boosting model performs several iteractions(i.e. several decision trees), where at each iteration it learns from the previous, thus gradually reducing the misclassification error). 
+Five models, including the decision tree, were compared using the model evaluation node. The gradient boosting model was the best as it yielded the lowest missclassification rate (PS: the gradient boosting model performs several iterations (i.e., several decision trees), where at each iteration it learns from the previous, thus gradually reducing the misclassification error). 
 
 
 ## Section 5 - Conclusion
@@ -222,13 +220,13 @@ Cluster 1 - Low-Priced Listings
 Cluster 2 - Standard-Priced Listings
 Cluster 3 - High-Income Listings
 
-Cluster/segment 2 was chosen as the group of listings likely to comprise of illegitimate listings. Although the 3 of the clusters generated had different characteristics, it was evident that illegitmate activity from listings in each of these clusters is very much a possibility. 
+Cluster/Segment 2 was chosen as the group of listings likely to comprise illegitimate listings. Although the three clusters generated had different characteristics, it was evident that illegitimate activity from listings in each of these clusters is very much a possibility. 
 
-The decision tree model showed that "occupancy rate", "listing income", "calculated host listing counts" and "minimum nights" were not great classifies of illegitimate listings based on this data as the majority of thelistings in the train and validation sample groups fell under 0=listing not engaged in illegitimate rental.
+The decision tree model showed that "occupancy rate,"  "listing income,"  "calculated host listing counts," and "minimum nights" were not great classifications of illegitimate listings based on this data, as the majority of the listings in the train and validation sample groups fell under 0=listing not engaged in illegitimate rental.
 
 ![Screenshot 2023-11-11 013424](https://github.com/Kishawn-Dorman/Airbnb-Edinburgh-Housing-Dilemma-Analysis/assets/146044118/bd1d778c-3929-44ad-a00a-eaf8a9e9b782)
 
-The decision tree did however, classify some of the listings as 1(the validity of this classification is limited because of the sample for this aspect of the decision tree).
+The decision tree did, however, classify some of the listings as 1 (the validity of this classification is limited because of the sample for this aspect of the decision tree).
 
 **Standard-Priced Listings 
 ->-> occupancy rate of >=54% then 68% chance of it being 1 (illegitimate) 
@@ -237,11 +235,11 @@ then 83% chance of that listing being engaged in illegitimate rental.**
 
 ### Recommendation
 
-Although the variables used for the classification model had a disproportionate sample groups, it revealled that illegitimate rental is very much present amongst Airbnb hosts. As a course of action, exploring the deployment of classification model similiar to what was created above would certainly help with detecting the hosts and/or properties being disruptive and harming Airbnb's ecosystem. The integration/ consideration of other variables like whether or not a host and/or listing has "booking rules" & "guest verification criteria" would certainly present new avenues for detection. 
+Although the variables used for the classification model had disproportionate sample groups, it revealed that illegitimate rental is very much present among Airbnb hosts. As a course of action, exploring the deployment of a classification model similar to what was created above would certainly help with detecting hosts and/or properties being disruptive and harming Airbnb's ecosystem. The integration and consideration of other variables, like whether or not a host and/or listing have "booking rules" and "guest verification criteria," would certainly present new avenues for detection. 
 
 ### Limitation
 
-During the data preparation phase many issues was found that could undermine the analysis and ultimately the model. A few listings was identified as being potentially affected by unusually high price values as the appeared to be outliers. Although the outliers may have been addressed, the credibility and particularly the accuracy of the classification model could have still been affected by hidden data errors. For example, a price value within the average range of the dataset would be more difficult to detect, than a price value extremely high or low.  
+During the data preparation phase, many issues were found that could undermine the analysis and ultimately the model. A few listings were identified as potentially affected by unusually high price values, as they appeared to be outliers. Although the outliers may have been addressed, the credibility and, particularly, the accuracy of the classification model could still have been affected by hidden data errors. For example, a price value within the average range of the dataset would be more difficult to detect than a price value that is extremely high or low.  
 
 ## References
 
