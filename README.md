@@ -1,6 +1,6 @@
-In this project, recommendations and insights are generated to tackle the problem described in the section to follow (i.e. About the project). Firstly SAS E-Miner was used to conduct exploratory data analysis on the "Listings" dataset [can be found here](http://insideairbnb.com/get-the-data). 
-I then performed data preparation (which involves data cleaning, variable reduction, variable creation) using Microsoft Excel. 
-Lastly using SAS E-Miner, a cluster analysis was executed, followed by a decision tree (classification model) that classifies a type/group (cluster) of Airbnb hosts in Edinburgh that maybe engaged in illegal short term rental.
+In this project, recommendations and insights are generated to tackle the problem described in the section to follow (i.e., about the project). Firstly, SAS E-Miner was used to conduct exploratory data analysis on the "Listings" dataset, which [can be found here](http://insideairbnb.com/get-the-data). 
+I then performed data preparation (which involves data cleaning, variable reduction, and variable creation) using Microsoft Excel. 
+Lastly, using SAS E-Miner, a cluster analysis was executed, followed by a decision tree (classification model) that classifies a type or group (cluster) of Airbnb hosts in Edinburgh that may be engaged in illegal short-term rental.
 
 
 ## Table of Contents
